@@ -13,7 +13,6 @@ body {
     justify-content: center;
 }
 
-
 body::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
@@ -27,7 +26,8 @@ body::before {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     height: 80%;
     display: flex;
     align-items: center;
@@ -36,36 +36,41 @@ body::before {
     border: 1px solid #1875E8;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
     background-image: url("img/Ruido.png");
-    background-size: 100% 100%;
+    background-size: cover;
     position: relative;
+    padding: 1rem;
 }
-
 
 .container__conteudo {
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .container__informacoes {
     flex: 1;
-    padding: 3rem;
+    padding: 1rem;
+}
+
+.container__imagem-pessoa {
+    max-width: 300px;
+    height: auto;
+    margin-left: 2rem;
 }
 
 .container__botao {
     border-radius: 16px;
     background: #1875E8;
-    padding: 16px 24px;
-    width: 100%;
-    font-size: 24px;
+    padding: 12px 18px;
+    font-size: 18px;
     font-weight: 700;
     border: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .container__texto {
-    margin: 16px 0 16px 0;
+    margin: 16px 0;
 }
 
 .container__texto-azul {
@@ -74,26 +79,27 @@ body::before {
 
 .container__input {
     width: 100%;
-    height: 72px;
+    height: 48px;
     border-radius: 16px;
     background-color: #FFF;
     border: none;
     color: #1875E8;
-    padding: 2rem;
-    font-size: 24px;
+    padding: 0.5rem;
+    font-size: 18px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
 }
 
 .container__botoes {
     display: flex;
-    gap: 2em;
+    gap: 1em;
 }
 
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
-    padding-bottom: 3rem;
+    font-size: 36px;
+    padding-bottom: 1rem;
 }
 
 p,
@@ -102,7 +108,7 @@ button {
 }
 
 .texto__paragrafo {
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -111,18 +117,16 @@ button:disabled {
 }
 
 @media screen and (max-width: 1250px) {
-
     h1 {
-        font-size: 50px;
+        font-size: 24px;
     }
 
     .container__botao {
-        font-size: 16px;
+        font-size: 14px;
     }
 
-
     .texto__paragrafo {
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .container__imagem-pessoa {
@@ -131,10 +135,10 @@ button:disabled {
 
     .container__conteudo {
         display: block;
-        position: inherit;
+        text-align: center;
     }
 
     .container__informacoes {
-        padding: 1rem
+        padding: 0.5rem;
     }
 }
