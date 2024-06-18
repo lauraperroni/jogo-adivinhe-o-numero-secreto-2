@@ -11,7 +11,7 @@ Pequeno projeto em Javascript feito no curso da Alura **["Lógica de programaç�
 Este projeto é um simples jogo de adivinhação de número, desenvolvido em JavaScript. O objetivo do jogo é adivinhar um número secreto gerado aleatoriamente pelo computador dentro de um intervalo predefinido. O jogo fornece dicas ao jogador, informando se o palpite é maior ou menor que o número secreto até que o número correto seja adivinhado.
 
 **Funcionalidades**
-
+---
 * Gerar número secreto: O jogo gera um número secreto aleatório entre 1 e um valor máximo especificado.
 * Palpites do jogador: O jogador insere palpites até adivinhar o número secreto.
 * Dicas interativas: O jogo fornece dicas se o palpite é maior ou menor que o número secreto.
@@ -21,7 +21,7 @@ Este projeto é um simples jogo de adivinhação de número, desenvolvido em Jav
 * Interface simples e elegante, com acessibilidade (text-to-speech)
 
 **Como Executar**
-
+---
 1. Acesse o jogo [aqui](https://lauraperroni.github.io/logica-js-2/)
 2. Você será levado a uma página com um input e dois botões.
 3. O jogador deve inserir palpites até adivinhar corretamente o número secreto.
